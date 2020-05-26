@@ -1,0 +1,148 @@
+body {
+    color: #04102b;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    background-color: #73EFFE;
+}
+
+p {
+    max-width: 800px;
+}
+
+header {
+    display:flex;
+}
+
+nav {
+    display:flex;
+}
+
+button {
+    flex-grow:1;
+    flex-direction: row;
+    margin-right:10%;
+    max-width:20em;
+    min-width:10em;
+    background-color:#edffff;
+    border-width: 0px 2px 0px 2px;
+    border-color: #04102b;
+    transition-duration: .5s;
+}
+
+hr {
+    border-width: 2px;
+    border-color: #04102b;
+}
+
+section {
+    border: 1px solid #04102b;
+    margin: 15px;
+    padding: 10px;
+}
+
+video {
+    max-height: 500px;
+    flex-grow: 1;
+}
+
+img {
+    height: 80px;
+    margin: 5%;
+}
+
+footer {
+    display:flex;
+    justify-content: center;
+}
+
+.vidcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.imgcontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#maincontainer {
+    flex-grow: 0.5;
+    width:70%;
+    margin: 5% 10% 5% 10%;
+}
+
+#footer {
+    position: fixed;
+    bottom:0;
+    margin-right: 7%;
+    margin-left: 7%;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #d2f7f7;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.head {
+    flex-grow:0.5;
+}
+
+.insta {
+    padding:5px;
+    position:fixed;
+    right:30px;
+    top:200px;
+    transition-duration: .5s;
+    width: 50px;
+    height: 50px;
+}
+
+.instaimg {
+    width: auto;
+    height: auto;
+}
+button:hover {
+    background-color: #8ce0ff;
+}
+
+.insta:hover {
+    background-color: #c9feff;
+    border-radius: 10px;
+}
+
+@media (max-width:1000px){
+    video {
+        max-height: 300px;
+    }
+}
+
+@media (max-width:650px){
+    button {
+        flex-direction: column;
+        margin-bottom: 10%;
+        max-width: 10em;
+    }
+    
+    nav {
+        flex-wrap:wrap;
+    }
+    
+    video {
+        max-height: 240px;
+    }
+    
+    img {
+        margin: 20%;
+    }
+    
+    #footer {
+        font-size: 0.9em;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .insta {
+        right: 10px;
+    }
+}
+
